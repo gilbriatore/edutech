@@ -1,6 +1,6 @@
-# EdutechApp – Plataforma Educacional com Monitoramento e Deploy na Nuvem
+# Sistema Edutech – Plataforma Educacional com Monitoramento e Deploy na Nuvem
 
-**EdutechApp** é uma aplicação monolítica construída com [JHipster](https://www.jhipster.tech/) e baseada no modelo JDL, com backend em Spring Boot e frontend em React. Esta aplicação é preparada para ambientes de produção com **deploy automatizado via Azure DevOps**, **hospedagem no Azure App Service** e **banco de dados MySQL flexível**. O sistema conta com **monitoramento via Azure Monitor/Application Insights** e **observabilidade local com Prometheus + Grafana via Docker Compose**.
+**Sistema Edutech** é uma aplicação monolítica construída com [JHipster](https://www.jhipster.tech/) e baseada no modelo JDL, com backend em Spring Boot e frontend em React. Esta aplicação é preparada para ambientes de produção com **deploy automatizado via Azure DevOps**, **hospedagem no Azure App Service** e **banco de dados MySQL flexível**. O sistema conta com **monitoramento via Azure Monitor/Application Insights** e **observabilidade local com Prometheus + Grafana via Docker Compose**.
 
 ---
 
