@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'edutechapp'
+    metrics_path: '/management/prometheus'
+    scheme: https
+    static_configs:
+      - targets:
+          - edutech-fsczaed9hfc0hugj.brazilsouth-01.azurewebsites.net

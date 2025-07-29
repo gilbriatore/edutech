@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20250726183022"
+  },
+  "applications": ["EdutechApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "especialidade",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Professor",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "curso",
+      "relationshipName": "cursosMinistrados",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,28 @@
+{
+  "edutechApp": {
+    "aluno": {
+      "home": {
+        "title": "Alunos",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Aluno",
+        "createOrEditLabel": "Criar ou editar Aluno",
+        "notFound": "Nenhum Aluno encontrado"
+      },
+      "created": "Um novo Aluno foi criado com o identificador {{ param }}",
+      "updated": "Um Aluno foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Aluno foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Aluno {{ id }}?"
+      },
+      "detail": {
+        "title": "Aluno"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "email": "Email",
+      "matricula": "Matricula",
+      "dataNascimento": "Data Nascimento",
+      "inscricoes": "Inscricoes"
+    }
+  }
+}

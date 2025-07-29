@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20250726183222"
+  },
+  "applications": ["EdutechApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "data",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "titulo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "conteudo",
+      "fieldType": "TextBlob"
+    }
+  ],
+  "name": "Aula",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "curso",
+      "otherEntityRelationshipName": "aulas",
+      "relationshipName": "curso",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

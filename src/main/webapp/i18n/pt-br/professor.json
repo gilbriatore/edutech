@@ -1,0 +1,27 @@
+{
+  "edutechApp": {
+    "professor": {
+      "home": {
+        "title": "Professors",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Professor",
+        "createOrEditLabel": "Criar ou editar Professor",
+        "notFound": "Nenhum Professor encontrado"
+      },
+      "created": "Um novo Professor foi criado com o identificador {{ param }}",
+      "updated": "Um Professor foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Professor foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Professor {{ id }}?"
+      },
+      "detail": {
+        "title": "Professor"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "email": "Email",
+      "especialidade": "Especialidade",
+      "cursosMinistrados": "Cursos Ministrados"
+    }
+  }
+}

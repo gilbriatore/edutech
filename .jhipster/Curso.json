@@ -1,0 +1,43 @@
+{
+  "annotations": {
+    "changelogDate": "20250726183122"
+  },
+  "applications": ["EdutechApp"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descricao",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cargaHoraria",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Curso",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "aula",
+      "otherEntityRelationshipName": "curso",
+      "relationshipName": "aulas",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "inscricao",
+      "otherEntityRelationshipName": "curso",
+      "relationshipName": "inscricoes",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

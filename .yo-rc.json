@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "EdutechApp",
+    "buildTool": "maven",
+    "clientFramework": "react",
+    "devDatabaseType": "h2Disk",
+    "enableTranslation": true,
+    "entities": ["Aluno", "Professor", "Curso", "Aula", "Inscricao"],
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "NDgwYzc5NTUzZTY2MWRlNmE1YmFlZjIxOWUxZTY5MWFlOGU4YjYxNTVlMWVlNjFmZWI2MmUxMjcwNjkwNGNiN2M5NWQ0MTI0ZWU3ZTQxOGMwYzdlZTM1MDdhYjBlMzBjYjUzMWZlYTFmOTA3ZDlkZWQzMjk1NGI1OGJmMDdjMzU=",
+    "languages": ["pt-br", "en"],
+    "lastLiquibaseTimestamp": 1753554802000,
+    "nativeLanguage": "pt-br",
+    "packageName": "com.edutech",
+    "prodDatabaseType": "mysql"
+  }
+}

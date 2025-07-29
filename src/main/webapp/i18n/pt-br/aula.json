@@ -1,0 +1,27 @@
+{
+  "edutechApp": {
+    "aula": {
+      "home": {
+        "title": "Aulas",
+        "refreshListLabel": "Atualizar lista",
+        "createLabel": "Criar novo Aula",
+        "createOrEditLabel": "Criar ou editar Aula",
+        "notFound": "Nenhum Aula encontrado"
+      },
+      "created": "Um novo Aula foi criado com o identificador {{ param }}",
+      "updated": "Um Aula foi atualizado com o identificador {{ param }}",
+      "deleted": "Um Aula foi excluído com o identificador {{ param }}",
+      "delete": {
+        "question": "Tem certeza de que deseja excluir Aula {{ id }}?"
+      },
+      "detail": {
+        "title": "Aula"
+      },
+      "id": "ID",
+      "data": "Data",
+      "titulo": "Titulo",
+      "conteudo": "Conteudo",
+      "curso": "Curso"
+    }
+  }
+}

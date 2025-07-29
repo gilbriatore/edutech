@@ -1,0 +1,26 @@
+{
+  "edutechApp": {
+    "inscricao": {
+      "home": {
+        "title": "Inscricaos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Inscricao",
+        "createOrEditLabel": "Create or edit a Inscricao",
+        "notFound": "No Inscricaos found"
+      },
+      "created": "A new Inscricao is created with identifier {{ param }}",
+      "updated": "A Inscricao is updated with identifier {{ param }}",
+      "deleted": "A Inscricao is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Inscricao {{ id }}?"
+      },
+      "detail": {
+        "title": "Inscricao"
+      },
+      "id": "ID",
+      "dataInscricao": "Data Inscricao",
+      "aluno": "Aluno",
+      "curso": "Curso"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+application {
+  config {
+    baseName EdutechApp
+    applicationType monolith
+    packageName com.edutech
+    authenticationType jwt
+    prodDatabaseType mysql
+    devDatabaseType h2Disk
+    buildTool maven
+    clientFramework react
+    enableTranslation true
+    nativeLanguage pt-br
+    languages [pt-br, en]
+  }
+
+  entities *
+}
+
+entity Aluno {
+  nome String required
+  email String required
+  matricula String required
+  dataNascimento LocalDate
+}
+
+entity Professor {
+  nome String required
+  email String required
+  especialidade String
+}
+
+entity Curso {
+  nome String required
+  descricao String
+  cargaHoraria Integer required
+}
+
+entity Aula {
+  data ZonedDateTime required
+  titulo String required
+  conteudo TextBlob
+}
+
+entity Inscricao {
+  dataInscricao Instant required
+}
+
+relationship OneToMany {
+  Curso{aulas} to Aula{curso}
+  Professor{cursosMinistrados} to Curso
+  Aluno{inscricoes} to Inscricao{aluno}
+  Curso{inscricoes} to Inscricao{curso}
+}
+
+paginate Aluno, Professor, Curso, Aula, Inscricao with pagination
+service Aluno, Professor, Curso, Aula, Inscricao with serviceClass
+dto Aluno, Professor, Curso, Aula, Inscricao with mapstruct
