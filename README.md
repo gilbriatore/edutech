@@ -43,40 +43,39 @@
 git clone https://github.com/gilbriatore/edutech.git
 cd edutech
 
+# ou
+
 # 2. Gere o projeto com base no JDL (caso necessário)
 jhipster import-jdl edutech.jdl
 
-# 3. Rode o banco local (opcional)
-# configure sua URL de conexão em application-dev.yml
-# ou use um banco MySQL local rodando em 3306
+# 3. Rode o banco local ou na nuvem
+# configure sua URL de conexão ao banco MySQL em application-dev.yml
 
-# 4. Rode a aplicação
+# 4. Suba os serviços de monitoramento
+docker-compose up -d
+
+# 5. Rode a aplicação
 ./mvnw
 
-# 5. Acesse em http://localhost:8080
+# 6. Acesse em http://localhost:8080
 ```
-
----
 
 ## 📊 Monitoramento Local com Prometheus + Grafana
 
 ```bash
-# 1. Suba os serviços de monitoramento
-docker-compose up -d
-
-# 2. Acesse Prometheus em:
+# 1. Acesse Prometheus em:
 http://localhost:9090
 
-# 3. Acesse Grafana em:
+# 2. Acesse Grafana em:
 http://localhost:3000
 # Usuário: admin | Senha: admin (padrão)
 
-# 4. Configure o dashboard no Grafana
+# 3. Veja as configurações do dashboard no Grafana
 - Data source: Prometheus (http://prometheus:9090)
 - Métrica exemplo: rate(http_server_requests_seconds_count[1m])
 ```
 
-> A aplicação hospedada no Azure está expondo as métricas em `/management/prometheus`, já sendo consumidas pelo Prometheus local.
+> A aplicação está expondo as métricas em `/management/prometheus`.
 
 ---
 
@@ -87,7 +86,6 @@ http://localhost:3000
 - **Azure App Service** (Linux, Java 17, porta 8080)
 - **MySQL Flexible Server** (configure usuário, senha e IP de acesso)
 - **Application Insights** (para métricas e logs)
-- **Crie um Azure Container Registry (ACR)** se for usar containers (opcional)
 
 ### 2. Conectando Azure DevOps à Azure
 
@@ -96,12 +94,11 @@ http://localhost:3000
 
 ### 3. Publicando o Pipeline
 
-- No seu repositório no GitHub: https://github.com/gilbriatore/edutech
 - Vá ao Azure DevOps > Pipelines > New Pipeline
 - Escolha **GitHub** como repositório
-- Escolha a opção **YAML file**
-- Caminho: `azure-pipelines.yml`
-- Salve e execute
+- Informe o repositório: https://github.com/gilbriatore/edutech
+- O Azure DevOps vai abrir a arquivo: `azure-pipelines.yml`
+- Então é só executar
 
 A pipeline irá:
 
@@ -114,10 +111,7 @@ A pipeline irá:
 
 ## 📈 Azure Monitor & Application Insights
 
-- Integrado no `application.yml` com a variável:
-  ```yaml
-  azure.application-insights.instrumentation-key: YOUR-INSTRUMENTATION-KEY
-  ```
+- Foram configurados com dependências Maven e na aplicação principal do Spring Boot.
 - Métricas como requisições, exceções, tempo de resposta e logs são capturados automaticamente.
 
 ---
