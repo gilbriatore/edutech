@@ -45,7 +45,7 @@ cd edutech
 
 # ou
 
-# 2. Gere o projeto com base no JDL (caso necessário)
+# 2. Gere o projeto com base no JDL (caso queira aprender jHipster)
 jhipster import-jdl edutech.jdl
 
 # 3. Rode o banco local ou na nuvem
